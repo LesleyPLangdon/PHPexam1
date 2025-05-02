@@ -1,5 +1,9 @@
 <?php
 /*
+    Name: 
+    Date: 
+*/
+/*
 Character Creator Starter Code
 This program will help the user generate a quirky and creative character profile
 Each section below is a mini-challenge that come together to form a complete character
