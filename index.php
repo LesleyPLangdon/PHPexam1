@@ -64,6 +64,7 @@ function chooseItem() {
             return "Haunted Stapler";
     }
 }
+echo "\n--- Signature Item Selected: " . chooseItem() . " ---\n";
 
 // 🧠 Mini-Challenge: Assign a Work Location
 function assignWorkLocation($item) {
