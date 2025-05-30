@@ -59,6 +59,23 @@ function assignGenre($traits) {
 function chooseSetting() {
     $settings = ["Space Diner", "Underwater Castle", "Haunted Library", "Cyberpunk City", "Post-Apocalyptic Farm"];
     return $settings[array_rand($settings)];
+
+
+    echo "Choose a setting for your movie:\n\n";
+for ($i = 0; $i < count($settings); $i++) {
+    echo ($i + 1) . ". " . $settings[$i] . "\n";
+}
+
+// Step 3: Prompt the user to make a selection
+echo "\nEnter the number of your chosen setting: ";
+$choice = trim(fgets(STDIN));
+
+// Step 4: Determine which setting was chosen or use a default
+if (is_numeric($choice) && $choice >= 1 && $choice <= count($settings)) {
+    $selectedSetting = $settings[$choice - 1];
+} else {
+    $selectedSetting = "Mysterious Unknown Location"; // default fallback
+}
 }
 
 // 🧪 Mini-Challenge 4: Add a Plot Twist
